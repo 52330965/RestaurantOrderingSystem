@@ -118,14 +118,38 @@
   background-color: #dfb48d;
 }
 
-/* Responsive */
 @media (max-width: 650px) {
   .menu-container {
-    grid-template-columns: 1fr;
-    width: 90%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(92%, 900px);
+    gap: 1rem;
   }
 
   .menu-header h1 {
-    font-size: 35px;
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .menu-info {
+    padding: 1rem;
+  }
+
+  .menu-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .menu-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .menu-bottom button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .menu-container {
+    grid-template-columns: 1fr;
   }
 }

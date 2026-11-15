@@ -2,15 +2,17 @@
 .register-page {
   width: 100%;
   min-height: 100vh;
+  min-height: 100svh;
   background-color: #1b120c;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 1rem;
 }
 
 .register-box {
-  width: 350px;
-  padding: 35px 40px;
+  width: min(100%, 350px);
+  padding: clamp(1.5rem, 6vw, 2.5rem);
   background-color: #2b241e;
   border: 2px solid #d5965c;
   border-radius: 20px;
@@ -42,6 +44,7 @@
 }
 
 .register-box input {
+  width: 100%;
   padding: 13px;
   border: 1px solid #d5965c;
   border-radius: 25px;
@@ -91,5 +94,11 @@
 .back-home {
   display: inline-block;
   margin-top: 10px;
+}
+
+@media (max-width: 380px) {
+  .register-box h1 {
+    font-size: 1.65rem;
+  }
 }
 

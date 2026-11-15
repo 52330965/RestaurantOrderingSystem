@@ -1,11 +1,13 @@
 
 .login-page {
   width: 100%;
-  min-height: 768px;
+  min-height: 100vh;
+  min-height: 100svh;
   background-color: #1b120c;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 2rem 1rem;
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.75),
     rgba(0, 0, 0, 0.85)
@@ -14,8 +16,8 @@
 }
 
 .login-box {
-  width: 350px;
-  padding: 40px;
+  width: min(100%, 350px);
+  padding: clamp(1.5rem, 6vw, 2.5rem);
   background-color: #2b241e;
   border: 2px solid #d5965c;
   border-radius: 20px;
@@ -47,6 +49,7 @@
 }
 
 .login-box input {
+  width: 100%;
   padding: 13px;
   border: 1px solid #d5965c;
   border-radius: 25px;
@@ -96,4 +99,10 @@
 .back-home {
   display: inline-block;
   margin-top: 15px;
+}
+
+@media (max-width: 380px) {
+  .login-box h1 {
+    font-size: 1.65rem;
+  }
 }
