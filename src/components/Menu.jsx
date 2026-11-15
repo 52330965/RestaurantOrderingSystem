@@ -61,7 +61,7 @@ const Menu = ({myOrder,setmyOrders}) => {
 
   const addToOrder = (dish) => {
     setmyOrders([...myOrder,{...dish,quantity:1} ]);
-     
+     alert(dish.name + " added to your order!");
   };
 
   return (
@@ -98,10 +98,8 @@ const Menu = ({myOrder,setmyOrders}) => {
                 <span>${dish.price}</span>
 
                 <button onClick={() => addToOrder(dish)}>
-                <div class="alert theme-success" role="alert">
-                  
                   Add to Order
-                  </div>
+                 
                 </button>
 
               </div>
