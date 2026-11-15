@@ -1,0 +1,83 @@
+.navbar {
+  display: grid;
+  grid-template-columns:  auto 1fr auto;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  background-color: #f7f4ed;
+  box-shadow: 0 2px 10px rgb(48 39 27 / 8%);
+}
+
+.nav-items,
+.nav-loginregister {
+  display: flex;
+  align-items: center;
+}
+
+.nav-items {
+  grid-column: 2;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.nav-loginregister {
+  grid-column: 1;
+  grid-row: 1;
+  justify-self: ;
+  gap: 0.35rem;
+}
+
+.nav-link {
+  border-radius: 999px;
+  color: #453b31;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0.65rem 1rem;
+  text-decoration: none;
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.nav-items .nav-link:hover,
+.nav-items .nav-link:focus-visible {
+  background-color: #e8d3b0;
+  color: #573d1f;
+}
+
+.nav-items .nav-link.active {
+  background-color: #eadfcf;
+  color: #573d1f;
+}
+
+.nav-loginregister .nav-link {
+  background-color: #cab199;
+  border: 1px solid #e6ddd0;
+  font-size: 0.82rem;
+  padding: 0.45rem 0.8rem;
+}
+
+.nav-loginregister .nav-link:hover,
+.nav-loginregister .nav-link:focus-visible {
+  background-color: #e0dad5;
+  border-color: #b69c83;
+  color: #d8b36d;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    padding: 20px 10px;
+  }
+
+  .nav-items {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    padding: 20px 10px;
+  }
+}
