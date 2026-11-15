@@ -83,7 +83,7 @@ const Home = () => {
         <div className="btn-container" style={{ marginTop: "20px" }}>
           <button className="btn" style={{ marginRight: "10px" }}>
             <Link
-              to="/login"
+              to="/Login"
               style={{ textDecoration: "none", color: "#d5965c" }}
             >
               Login
