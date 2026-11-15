@@ -7,8 +7,8 @@ import drink from "../assets/images/drink.jpg";
 import pasta from "../assets/images/pasta.webp";
 import salad from "../assets/images/salad.jpg";
 import pizza from "../assets/images/pizza.webp";
-const Menu = () => {
-  const [dishes,Setdishes] = useState( [
+const Menu = ({myOrder,setmyOrders}) => {
+  const [dishes] = useState( [
   {
     id: 1,
     name: "Italian Pizza",
@@ -42,7 +42,7 @@ const Menu = () => {
     image: salad
   },
   {
-    
+    id:5,
     name: "Chocolate Cake",
     description: "Delicious chocolate cake.",
     price: 7,
@@ -58,15 +58,14 @@ const Menu = () => {
     image: drink
   }]);
  
-const[ myOrder, setMyOrder ]=useState(""); 
 
   const addToOrder = (dish) => {
-    setMyOrder([...myOrder, dish]);
-    alert(dish.name + " added to your order!");
+    setmyOrders([...myOrder,{...dish,quantity:1} ]);
+     
   };
 
   return (
-    <>
+    
     <div className="menu-page">
 
       <div className="menu-header">
@@ -83,7 +82,6 @@ const[ myOrder, setMyOrder ]=useState("");
       </div>
 
       <div className="menu-container">
-
         {dishes.map((dish) => (
           <div className="menu-card" key={dish.id}>
 
@@ -100,7 +98,10 @@ const[ myOrder, setMyOrder ]=useState("");
                 <span>${dish.price}</span>
 
                 <button onClick={() => addToOrder(dish)}>
+                <div class="alert theme-success" role="alert">
+                  
                   Add to Order
+                  </div>
                 </button>
 
               </div>
@@ -113,7 +114,7 @@ const[ myOrder, setMyOrder ]=useState("");
       </div>
 
     </div>
-   </>
+   
   );
 };
 

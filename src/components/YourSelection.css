@@ -1,0 +1,190 @@
+.selection-page {
+  min-height: 100vh;
+  background-color: #1b120c;
+}
+
+.selection-title {
+  margin-bottom: 0.75rem;
+  color: #d5965c;
+  font-size: clamp(2.25rem, 5vw, 3rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-shadow: 0 3px 18px rgb(213 150 92 / 16%);
+}
+
+.selection-page > .text-center.mb-5 p {
+  color: #dfb48d !important;
+  font-size: 1.05rem;
+}
+
+.selection-card {
+  overflow: hidden;
+  border: 1px solid rgb(213 150 92 / 42%);
+  border-radius: 1.1rem;
+  background: linear-gradient(155deg, #332920 0%, #2b241e 58%, #241b15 100%);
+  color: #dfb48d;
+  box-shadow: 0 10px 28px rgb(0 0 0 / 20%);
+  transition: transform 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.selection-card:hover {
+  transform: translateY(-6px);
+  border-color: #d5965c;
+  box-shadow: 0 16px 34px rgb(0 0 0 / 32%), 0 0 22px rgb(213 150 92 / 12%);
+}
+
+.selection-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 350ms ease;
+}
+
+.selection-card:hover img {
+  transform: scale(1.035);
+}
+
+.selection-card .card-body {
+  padding: 1.5rem;
+}
+
+.selection-card .card-title {
+  margin-bottom: 0.75rem;
+  color: #d5965c;
+  font-weight: 700;
+}
+
+.selection-card .card-text {
+  min-height: 3rem;
+  color: #dfb48d;
+  line-height: 1.6;
+}
+
+.item-price {
+  margin: 1rem 0;
+  color: #d5965c;
+  font-weight: 700;
+}
+
+.selection-card .btn-outline-warning {
+  min-width: 2.5rem;
+  border-color: #d5965c;
+  border-radius: 0.75rem;
+  color: #d5965c;
+  font-size: 1.1rem;
+  font-weight: 700;
+  transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+.selection-card .btn-outline-warning:hover {
+  transform: translateY(-1px);
+  background-color: #d5965c;
+  color: #1b120c;
+}
+
+.selection-card .badge.bg-warning {
+  min-width: 2.25rem;
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.7rem;
+  background-color: #d5965c !important;
+}
+
+.selection-card h5:not(.item-price) {
+  color: #dfb48d;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.selection-card .btn-danger {
+  border: 1px solid rgb(220 53 69 / 55%);
+  border-radius: 999px;
+  padding: 0.55rem 1.25rem;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.selection-card .btn-danger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 14px rgb(220 53 69 / 22%);
+}
+
+.selection-page > .text-center.text-light {
+  padding: 2.5rem 1.5rem;
+  border: 1px solid rgb(213 150 92 / 35%);
+  border-radius: 1.1rem;
+  background-color: #2b241e;
+  color: #dfb48d !important;
+}
+
+.selection-page > .text-center.text-light h3 {
+  color: #d5965c;
+  font-weight: 700;
+}
+
+.selection-page .btn-warning {
+  border: 1px solid #d5965c;
+  border-radius: 999px;
+  background-color: #d5965c;
+  color: #1b120c;
+  font-weight: 700;
+  transition: transform 180ms ease, background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.selection-page .btn-warning:hover {
+  transform: translateY(-2px);
+  border-color: #dfb48d;
+  background-color: #dfb48d;
+  color: #1b120c;
+  box-shadow: 0 7px 18px rgb(213 150 92 / 20%);
+}
+
+.total-box {
+  padding: clamp(1.5rem, 4vw, 2.5rem);
+  border: 1px solid rgb(213 150 92 / 55%);
+  border-radius: 1.1rem;
+  background: linear-gradient(135deg, #30251d, #2b241e 65%, #241b15);
+  color: #dfb48d;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 22%);
+}
+
+.total-box h4 {
+  margin-bottom: 0.75rem;
+  color: #dfb48d;
+  font-size: 1.1rem;
+}
+
+.total-box h2 {
+  color: #d5965c;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  font-weight: 700;
+}
+
+.selection-page :focus-visible {
+  outline: 3px solid #dfb48d;
+  outline-offset: 3px;
+}
+
+@media (max-width: 575.98px) {
+  .selection-card img {
+    height: 200px;
+  }
+
+  .selection-card .card-body {
+    padding: 1.25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .selection-card,
+  .selection-card img,
+  .selection-card .btn,
+  .selection-page .btn-warning {
+    transition: none;
+  }
+
+  .selection-card:hover,
+  .selection-card:hover img,
+  .selection-card .btn:hover,
+  .selection-page .btn-warning:hover {
+    transform: none;
+  }
+}

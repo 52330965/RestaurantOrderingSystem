@@ -64,13 +64,7 @@
   color: #d8b36d;
 }
 
-@media (max-width: 700px) {
-  .navbar {
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 30px;
-    padding: 20px 10px;
-  }
+
 
   .nav-items {
     flex-wrap: wrap;
@@ -81,4 +75,8 @@
     font-size: 20px;
     padding: 20px 10px;
   }
+
+.btn-outline:hover {
+background-color: #e8d3b0;
+  color: #573d1f;
 }
