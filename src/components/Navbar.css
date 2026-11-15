@@ -5,8 +5,9 @@
   gap: 1rem;
   width: 100%;
   padding: 0.75rem 1.5rem;
-  background-color: #f7f4ed;
+  background-color: #0c0303;
   box-shadow: 0 2px 10px rgb(48 39 27 / 8%);
+  
 }
 
 .nav-items,
@@ -30,7 +31,7 @@
 
 .nav-link {
   border-radius: 999px;
-  color: #453b31;
+  color: #b07e4d;
   font-size: 18px;
   font-weight: 500;
   padding: 0.65rem 1rem;

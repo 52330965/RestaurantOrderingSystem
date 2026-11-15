@@ -1,0 +1,96 @@
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.home-title{
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+body {
+ margin: 0px;
+ margin-bottom: 0px;
+ margin-top: 0px;
+  color:black
+}
+
+.home {
+  width: 100%;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+  background-position: "center 50%",
+}
+.home-content {
+  text-align: center;
+  color: #d99a5e;
+  padding: 2rem;
+  padding-top: 2px;
+  margin-top: 50px;
+
+}
+.btn{
+  background-color: #2b241e;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  font-weight: bold;
+  justify-content: flex-end;
+  border-radius: 90px;
+  font-size: 8px;
+  cursor: pointer;
+  border: 2px solid #c68f5b;
+}
+.btn:hover {
+  background-color: #e3bd98;
+  color: #fff;
+  border: 2px solid #2b241e;
+}
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-home {
+  background-color: #d5965c;
+  border: 2px solid #d5965c;
+  border-radius: 80px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.explore-btn {
+  text-decoration: none;
+  color: #1b120c;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.btn-home:hover {
+  background-color: transparent;
+  transform: scale(1.08);
+}
+
+.btn-home:hover .explore-btn {
+  color: #dfb48d;
+}
+.selection-btn{
+ text-decoration: none;
+  color: #1b120c;
+  font-size: 17px;
+  font-weight: bold;
+  margin-right: 10px;
+}
