@@ -1,0 +1,132 @@
+
+.menu-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1b120c;
+  padding: 30px 0;
+}
+
+/* Header */
+.menu-header {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.menu-header h1 {
+  color: #d5965c;
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+.menu-header p {
+  color: #dfb48d;
+  font-size: 18px;
+}
+
+/* Categories */
+.menu-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 35px auto;
+  width: 90%;
+}
+
+.menu-categories button {
+  background-color: #2b241e;
+  color: #d5965c;
+  border: 1px solid #d5965c;
+  border-radius: 25px;
+  padding: 10px 22px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-categories button:hover {
+  background-color: #d5965c;
+  color: #1b120c;
+}
+
+/* Menu Cards */
+.menu-container {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.menu-card {
+  background-color: #2b241e;
+  border: 1px solid #d5965c;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(213, 150, 92, 0.3);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.menu-info {
+  padding: 20px;
+}
+
+.menu-info h2 {
+  color: #dfb48d;
+  font-size: 23px;
+}
+
+.menu-info p {
+  color: #c5a486;
+  font-size: 15px;
+}
+
+.menu-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.menu-bottom span {
+  color: #d5965c;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.menu-bottom button {
+  background-color: #d5965c;
+  color: #1b120c;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-bottom button:hover {
+  background-color: #dfb48d;
+}
+
+/* Responsive */
+@media (max-width: 650px) {
+  .menu-container {
+    grid-template-columns: 1fr;
+    width: 90%;
+  }
+
+  .menu-header h1 {
+    font-size: 35px;
+  }
+}
